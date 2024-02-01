@@ -10,14 +10,17 @@ const Content = () => {
     const [index, setIndex] = useState("Accueil");
 
     return (
-        <section className="flex">
-            <SideBar index={index} setIndex={setIndex}/>
-            {index === "Accueil" && <Accueil />}
-            {index === "About" && <About />}
-            {index === "Experiences" && <Experiences />}
-            {index === "Realisation" && <Realisation />}
-            {index === "Contact" && <Contact />}
+        <section className="flex flex-row h-screen">
+            <SideBar index={index} setIndex={setIndex} />
+            <div className="flex-grow relative order-2">
+                {index === "Accueil" && <Accueil />}
+                {index === "About" && <About />}
+                {index === "Experiences" && <Experiences />}
+                {index === "Realisation" && <Realisation />}
+                {index === "Contact" && <Contact />}
+            </div>
         </section>
+
     )
 }
 

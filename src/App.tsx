@@ -3,7 +3,7 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <body>
+    <body className="h-screen overflow-y-hidden">
       <Header />
       <Content />
     </body>

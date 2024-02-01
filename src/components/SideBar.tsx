@@ -12,7 +12,7 @@ const nav = [
 ]
 const SideBar = ({ index, setIndex }: Props) => {
     return (
-        <div className=" bg-white py-10 px-10 ml-16 mt-6 rounded-3xl w-[25%] shadow-xl border border-gray-200">
+        <div id="sidebar" className="hidden xl:block bg-white py-10 px-4 2xl:px-10 ml-16 mt-6 rounded-3xl w-2/5 2xl:w-2/6 relative order-1 shadow-xl border border-gray-200">
             <div className="flex flex-col">
                 {nav.map(nav => (
                     <ListItem 

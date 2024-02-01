@@ -20,3 +20,15 @@ html, body {
 .slide-in-left {
     animation: slideInLeft 0.3s ease-in-out;
 }
+
+body {
+    overflow: hidden;
+}
+  
+.bg-white {
+    overflow-y: auto;
+}
+  
+.bg-white::-webkit-scrollbar {
+    display: none;
+}
