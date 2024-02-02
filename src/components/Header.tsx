@@ -15,13 +15,13 @@ const Header = () => {
     }
 
     return (
-        <header className="bg-white p-10 lg:p-14 mx-4 xl:mx-16 mt-4 lg:mt-10 rounded-3xl shadow-xl border border-gray-200">
+        <header className="bg-white dark:bg-neutral-900 p-10 lg:p-14 mx-4 xl:mx-16 mt-4 lg:mt-10 rounded-3xl shadow-xl border border-gray-200 dark:border-neutral-800">
             <div className="flex justify-between items-center">
                 <div className="flex justify-between items-center gap-6">
-                    <IoMenuOutline onClick={handleMobileMenu}  className="xl:hidden w-8 h-8"/>
-                    <h1 className="font-semibold text-3xl">Jonathan<span className="text-blue-700 text-2xl font-bold">.Dev</span></h1>
+                    <IoMenuOutline onClick={handleMobileMenu}  className="xl:hidden w-8 h-8 dark:text-white"/>
+                    <h1 className="font-semibold text-3xl dark:text-white">Jonathan<span className="text-blue-700 text-2xl font-bold">.Dev</span></h1>
                 </div>
-                <div className="flex justify-between items-center gap-6">
+                <div className="hidden md:flex justify-between items-center gap-6 dark:text-white">
                     <FaGithub className="w-8 h-8"/>
                     <IoLogoLinkedin className="w-10 h-10"/>
                 </div>

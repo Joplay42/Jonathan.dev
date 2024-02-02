@@ -4,7 +4,6 @@
 
 html, body {
     height: 100%;
-    background-color: rgb(248, 248, 248);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -23,12 +22,12 @@ html, body {
 
 body {
     overflow: hidden;
-}
-  
-.bg-white {
     overflow-y: auto;
 }
-  
-.bg-white::-webkit-scrollbar {
+div::-webkit-scrollbar {
     display: none;
+}
+
+.dark\\:invert {
+    filter: invert(1);
 }
