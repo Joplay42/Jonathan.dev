@@ -8,7 +8,7 @@ const Accueil = () => {
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <button className="bg-blue-700 text-white px-6 py-2 rounded-lg">test</button>
                     </div>
-                    <img src="../src/components/svg/Experience.svg" className="w-[300px] justify-self-center h-auto order-1 lg:order-2" />
+                    <img src="/Experience.svg" className="w-[300px] justify-self-center h-auto order-1 lg:order-2" />
                 </section>
             </div>
         </div>

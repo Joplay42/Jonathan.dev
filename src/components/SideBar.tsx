@@ -4,11 +4,11 @@ interface Props {
     setIndex: React.Dispatch<React.SetStateAction<string>>;
 }
 const nav = [
-    {name: "Accueil", link:"Accueil", icon: "../src/components/svg/Accueil.svg",},
-    {name: "À propos", link:"About", icon: "../src/components/svg/About.svg",},
-    {name: "Mes expériences", link:"Experiences", icon: "../src/components/svg/Experience.svg",},
-    {name: "Réalisations", link:"Realisation", icon: "../src/components/svg/Realisation.svg",},
-    {name: "Me joindre", link:"Contact", icon: "../src/components/svg/Contact.svg",},
+    {name: "Accueil", link:"Accueil", icon: "/Accueil.svg",},
+    {name: "À propos", link:"About", icon: "/About.svg",},
+    {name: "Mes expériences", link:"Experiences", icon: "/Experience.svg",},
+    {name: "Réalisations", link:"Realisation", icon: "/Realisation.svg",},
+    {name: "Me joindre", link:"Contact", icon: "/Contact.svg",},
 ]
 const SideBar = ({ index, setIndex }: Props) => {
     return (
