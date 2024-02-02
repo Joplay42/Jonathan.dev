@@ -1,9 +1,8 @@
 interface Props {
-    index:string;
     setIndex: React.Dispatch<React.SetStateAction<string>>;
 }
 
-const Accueil = ({ index, setIndex }: Props) => {
+const Accueil = ({ setIndex }: Props) => {
     return (
         <div className=" bg-white dark:bg-neutral-900 dark:text-white rounded-3xl shadow-xl border border-gray-200 dark:border-neutral-800 overflow-y-auto px-4 md:px-14 lg:px-20 xl:px-24 2xl:px-32 mt-6 mr-6 xl:mr-16 ml-6 mb-6">
             <div className="h-[70vh] ">

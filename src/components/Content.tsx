@@ -13,7 +13,7 @@ const Content = () => {
         <section className="flex flex-col lg:flex-row h-screen">
             <SideBar index={index} setIndex={setIndex} />
             <div className="flex-grow relative order-2">
-                {index === "Accueil" && <Accueil index={index} setIndex={setIndex}/>}
+                {index === "Accueil" && <Accueil setIndex={setIndex}/>}
                 {index === "About" && <About />}
                 {index === "Experiences" && <Experiences />}
                 {index === "Realisation" && <Realisation />}
