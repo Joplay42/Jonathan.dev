@@ -22,8 +22,12 @@ const Header = () => {
                     <h1 className="font-semibold text-3xl dark:text-white">Jonathan<span className="text-blue-700 text-2xl font-bold">.Dev</span></h1>
                 </div>
                 <div className="hidden md:flex justify-between items-center gap-6 dark:text-white">
-                    <FaGithub className="w-8 h-8"/>
-                    <IoLogoLinkedin className="w-10 h-10"/>
+                    <a href="https://github.com/Joplay42" target="_blank">
+                        <FaGithub className="w-8 h-8"/>
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <IoLogoLinkedin className="w-10 h-10"/>
+                    </a>
                 </div>
             </div>
         </header>
