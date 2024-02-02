@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { MdDarkMode, MdOutlineDarkMode } from "react-icons/md";
 
 interface Props {
     className: string;
