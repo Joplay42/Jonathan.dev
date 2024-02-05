@@ -9,7 +9,7 @@ const Accueil = ({ setIndex }: Props) => {
                 <section data-aos="fade-right" className="grid lg:grid-cols-2 justify-between items-center gap-5 2xl:gap-10 py-4 md:py-14">
                     <div className="order-2 lg:order-1 max-w-5xl">
                         <h4 className="font-bold dark:text-neutral-400 mb-3">Hey, <span className="font-medium">je me présente</span></h4>
-                        <h1 className=" text-2xl font-bold leading-3 mt-8"><span className="text-sky-700">Jonathan</span> Deschênes</h1>
+                        <h1 className=" text-2xl font-bold mt-8"><span className="text-sky-700">Jonathan</span> Deschênes</h1>
                         <h1 className="text-neutral-600 dark:text-neutral-600 text-2xl font-bold leading-5 mb-7">Je suis developper Web</h1>
                         <p className="leading-6 mt-3">Je suis un passioné de l'informatique. En d'autre mot un expert en développement web, avec beaucoup d'expériences dans le domaine je sais comment me surpasser.</p>
                         <button className="bg-blue-700 hover:bg-transparent hover:text-blue-700 border border-blue-700 dark:bg-blue-700 dark:border-blue-700 dark:hover:text-white hover:dark:bg-transparent text-white px-6 py-3 rounded-lg mt-4" onClick={() => {setIndex("Contact")}}>Me contacter</button>
