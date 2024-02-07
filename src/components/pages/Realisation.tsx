@@ -1,8 +1,20 @@
-import Website from "../website";
+import Website from "../Website";
 
 const Realisation = () => {
     const project = [
-        {name: "Amicale des scouts",type: "obnl",description: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum", link: "https://www.amicalescoutsguides-montreal.org/", img: "/amicale.png"},
+        {name: "Amicale des scouts",type: "Organisme",description: "L'amicale des scouts et guides de Montréal sert à regrouper les anciens scouts afin de s'assurer à garder la culture allumé.", link: "https://www.amicalescoutsguides-montreal.org/", img: "/amicale.png"},
+        {name: "Zorilla web",type: "Agence",description: "Zorilla web est une compagnie de développement d'application, d'ailleurs ils ont créer un constructeur de site web.", link: "https://zorillaweb.com/", img: "/ZorillaWeb.png"},
+        {name: "Marché Ahuntsic-CartieVille",type: "Organisme",description: "Marché Ahuntsic-Cartierville est un petit marché d'été qui aide les communautés en offrant des produits frais peu couteux.", link: "https://www.marcheac.com/", img: "/MarcheAC.png"},
+        {name: "Réparatech",type: "Agence",description: "Réparatech est une compagnie de support informatique, celle-ci donnes son aide et ses services pour aider les gens avec des problèmes informatiques.", link: "https://reparatech.net/", img: "/Reparatech.png"},
+        {name: "Zookod",type: "Agence",description: "Zookod est une agence de site web, celle-ci réalise des sites web professionel pour les clients.", link: "https://zookod.com/", img: "/Zookod.png"},
+        {name: "Centre d'entraide thérèse-de-Blainville",type: "Organisme",description: "Centre d'entraide Thérèse-de-Blainville aide les gens défavoriser en les hébergeants en augmentant leur qualité de vie.", link: "https://www.entraidetdb.org/", img: "/Cetb.png"},
+        {name: "trajectoire PME",type: "Agence",description: "Trajectoire PME est une agence de SEO, cette compagnie s'occupe d'optimiser vos site web pour s'assurer le bon fonctionnement du SEO", link: "https://www.search-engine-optimization.ca/", img: "/trajectoirePME.png"},
+        {name: "SCRI",type: "organisme",description: "Le Scri est un organisme a but d'aider les nouveaux immigrant en aide, ils hébergent et aide ceux-ci.", link: "https://www.scrimontreal.ca/", img: "/SCRI.png"},
+        {name: "Pause café j'm",type: "Agence",description: "Pause café j'm est une compagnie de café, celle-ci s'occupe de vendre divers produits de café. Machines, grains et même installation de machine.", link: "https://www.pausecafejm.com/", img: "/JM.png"},
+        {name: "Canada Animal Distribution",type: "Agence",description: "Canada Animal Distribution est une compagnie qui se spécialise dans la vente de produit animalier, ils offre un variété de produits et ils achètent aussi.", link: "https://www.canadaanimaldistribution.com/", img: "/CAD.png"},
+
+
+
     ]
 
     return (
@@ -25,7 +37,7 @@ const Realisation = () => {
                         <button className="border border-neutral-400 rounded-full px-2 py-1">Organisme</button>
                         <button className="border border-neutral-400 rounded-full px-2 py-1">Agence</button>
                     </div>
-                    <div className="grid grid-cols-3">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
                         {project.map(project => (
                             <Website link={project.link} img={project.img} name={project.name} description={project.description} type={project.type}/>
                         ))}
