@@ -5,7 +5,7 @@ const Contact = () => {
                 <section className="py-10">
                     <h1 className="text-center font-semibold text-3xl mb-10">N'hésitez pas à me <span className="text-blue-700">contacter</span> pour plus d'information!</h1>
                     <form action="" className="relative z-50 lg:w-[45rem] mx-8 lg:mx-auto bg-white shadow-xl border p-10 rounded-2xl space-y-4 dark:bg-neutral-800 dark:border dark:border-neutral-700 ">
-                        <div className="flex justify-evenly gap-10">
+                        <div className="lg:flex justify-evenly gap-10 space-y-4 lg:space-y-0">
                             <div className="flex flex-col w-full space-y-4">
                                 <label className="dark:text-neutral-500">Nom : </label>
                                 <input className="border border-neutral-300 p-2 rounded-xl dark:bg-neutral-800 dark:border-neutral-700 " type="text" placeholder="votre nom" />
