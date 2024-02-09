@@ -1,8 +1,17 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 const About = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
         <div className=" bg-white dark:bg-neutral-900 dark:text-white rounded-3xl shadow-xl border border-gray-200 dark:border-neutral-800 overflow-y-auto px-4 md:px-14 lg:px-20 xl:px-24 2xl:px-32 mt-6 mr-6 xl:mr-16 ml-6 mb-6">
             <div className="h-[70vh]">
-                <section className="grid grid-cols-3 justify-between items-center gap-5 2xl:gap-10 py-10 lg:py-0">
+                <section data-aos="fade-right" className="grid grid-cols-3 justify-between items-center gap-5 2xl:gap-10 py-10 lg:py-10 2xl:py-0">
                         <div className="order-1 max-w-5xl col-span-3 md:col-span-2">
                             <h4 className="font-bold text-blue-700 dark:text-white mb-3 text-xl"><span className="text-gray-400 text-2xl mr-2 dark:text-sky-700">01</span> À propos de moi</h4><hr className="border-neutral-400 dark:border-neutral-700" />
                             <p className="mt-6 text-gray-600 font-medium dark:text-neutral-500 leading-6">Hey, je m'appelle Jonathan Deschênes et je suis à la recherche d'un emploi en tant que designer et programmeur web. J'ai de l'expérience dans ce domaine, autrement dit j'ai réaliser plusieurs sites professionel pour d'autre compagnie.</p><br />

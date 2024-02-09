@@ -1,5 +1,8 @@
 import { useState } from "react";
 import Website from "../Website";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Realisation = () => {
     const project = [
@@ -17,10 +20,14 @@ const Realisation = () => {
 
     const [active, setActive] = useState("Tous");
 
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
-        <div className=" bg-white dark:bg-neutral-900 dark:text-white rounded-3xl shadow-xl border border-gray-200 dark:border-neutral-800 overflow-y-auto px-4 md:px-14 lg:px-20 xl:px-32 mt-6 mr-6 xl:mr-16 ml-6 mb-6">
+        <div className=" bg-white dark:bg-neutral-900 dark:text-white rounded-3xl shadow-xl border border-gray-200 dark:border-neutral-800 overflow-y-auto px-4 md:px-14 lg:px-20 xl:px-24 2xl:px-32 mt-6 mr-6 xl:mr-16 ml-6 mb-6">
             <div className="h-[70vh] ">
-                <section className="grid lg:grid-cols-2 justify-between items-center gap-5 2xl:gap-10 py-10 lg:py-10">
+                <section data-aos="fade-right" className="grid lg:grid-cols-2 justify-between items-center gap-5 2xl:gap-10 py-10 lg:py-10">
                         <div className="order-1 max-w-5xl">
                             <h4 className="font-bold text-blue-700 dark:text-white mb-3 text-xl"><span className="text-gray-400 text-2xl mr-2 dark:text-sky-700">03</span> Mes réalisations</h4><hr className="border-neutral-400 dark:border-neutral-700" />
                             <p className="mt-6 text-gray-600 font-medium dark:text-neutral-500 leading-6">Chacun de mes sites web sont réaliser avec créativité et unicité. La règle numéro un dans la création de site web est la perception des détails. Chacun de mes sites sont réaliser minutieusement.</p><br />

@@ -1,12 +1,21 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 interface Props {
     setIndex: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const Accueil = ({ setIndex }: Props) => {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
         <div className=" bg-white dark:bg-neutral-900 dark:text-white rounded-3xl shadow-xl border border-gray-200 dark:border-neutral-800 overflow-y-auto px-4 md:px-14 lg:px-20 xl:px-24 2xl:px-32 mt-6 mr-6 xl:mr-16 ml-6 mb-6">
             <div className="h-[70vh]">
-                <section className="grid lg:grid-cols-2 justify-between items-center gap-5 2xl:gap-10 py-4 md:py-14">
+                <section data-aos="fade-right" className="grid lg:grid-cols-2 justify-between items-center gap-5 2xl:gap-10 py-4 md:py-14 max-w-[59rem]">
                     <div className="order-2 lg:order-1 max-w-5xl">
                         <h4 className="font-bold dark:text-neutral-400 mb-3">Hey, <span className="font-medium">je me présente</span></h4>
                         <h1 className=" text-2xl font-bold mt-8"><span className="text-sky-700">Jonathan</span> Deschênes</h1>

@@ -28,8 +28,8 @@ const Website = ({ link, img, name, type, description }: Props) => {
                     <div className="absolute bottom-1/2 transform translate-y-1/2 bg-blue-700 dark:bg-neutral-800 border border-blue-700 dark:border-neutral-700 rounded-lg bg-opacity-90 h-full w-full flex justify-center items-center" onMouseOver={handleHover} onMouseOut={handleOut}>
                         <div>
                             <h4 className="text-center text-white text-lg font-bold">{type}</h4>
-                            <p className="px-10 py-4 text-white text-center font-medium text-opacity-100">{description}</p>
-                            <a href={link} target="_blank" className="flex gap-2 items-center text-white border border-white px-5 py-2 w-fit rounded-full hover:bg-white hover:text-blue-700 dark:hover:text-neutral-800 mx-auto">
+                            <p className="p-4 text-white text-lg xl:text-sm 2xl:text-md text-center font-medium text-opacity-100">{description}</p>
+                            <a href={link} target="_blank" className="flex gap-2 items-center text-white border border-white px-3 py-1 w-fit rounded-full hover:bg-white hover:text-blue-700 dark:hover:text-neutral-800 mx-auto">
                                 Voir le site 
                                 <CiLink className="w-8 h-auto"/>
                             </a>

@@ -1,8 +1,17 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 const Contact = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
         <div className=" bg-white dark:bg-neutral-900 dark:text-white rounded-3xl shadow-xl border border-gray-200 dark:border-neutral-800 overflow-y-auto mt-6 mr-6 xl:mr-16 ml-6 mb-6">
-            <div className="h-[70vh] relative">
-                <section className="py-10">
+            <div className="h-[70vh]">
+                <section data-aos="fade-right" className="py-10 relative">
                     <h1 className="text-center font-semibold text-3xl mb-10">N'hésitez pas à me <span className="text-blue-700">contacter</span> pour plus d'information!</h1>
                     <form action="" className="relative z-50 lg:w-[45rem] mx-8 lg:mx-auto bg-white shadow-xl border p-10 rounded-2xl space-y-4 dark:bg-neutral-800 dark:border dark:border-neutral-700 ">
                         <div className="lg:flex justify-evenly gap-10 space-y-4 lg:space-y-0">
