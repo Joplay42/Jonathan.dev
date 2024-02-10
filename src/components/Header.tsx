@@ -1,6 +1,9 @@
 import { FaGithub } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io";
 import { IoMenuOutline } from "react-icons/io5";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Header = () => {
     function handleMobileMenu() {
@@ -14,8 +17,12 @@ const Header = () => {
         }
     }
 
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
-        <header className="bg-white dark:bg-neutral-900 p-6 lg:p-14 mx-4 xl:mx-16 mt-4 lg:mt-10 rounded-3xl shadow-xl border border-gray-200 dark:border-neutral-800">
+        <header data-aos="fade-down" data-aos-duration="1000" className="bg-white dark:bg-neutral-900 p-6 lg:p-14 mx-4 xl:mx-16 mt-4 lg:mt-10 rounded-3xl shadow-xl border border-gray-200 dark:border-neutral-800">
             <div className="flex justify-between items-center">
                 <div className="flex justify-between items-center gap-6">
                     <IoMenuOutline onClick={handleMobileMenu}  className="xl:hidden w-8 h-8 dark:text-white"/>

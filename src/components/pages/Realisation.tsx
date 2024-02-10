@@ -30,9 +30,9 @@ const Realisation = () => {
                 <section data-aos="fade-right" className="grid lg:grid-cols-2 justify-between items-center gap-5 2xl:gap-10 py-10 lg:py-10">
                         <div className="order-1 max-w-5xl">
                             <h4 className="font-bold text-blue-700 dark:text-white mb-3 text-xl"><span className="text-gray-400 text-2xl mr-2 dark:text-sky-700">03</span> Mes réalisations</h4><hr className="border-neutral-400 dark:border-neutral-700" />
-                            <p className="mt-6 text-gray-600 font-medium dark:text-neutral-500 leading-6">Chacun de mes sites web sont réaliser avec créativité et unicité. La règle numéro un dans la création de site web est la perception des détails. Chacun de mes sites sont réaliser minutieusement.</p><br />
+                            <p className="mt-6 text-gray-600 font-medium dark:text-neutral-500 leading-6">Chacun de mes sites web est conçu avec créativité et originalité. Pour moi, la règle numéro un dans la création de sites web est l'attention portée aux détails. Chaque élément est soigneusement pensé et réalisé avec minutie.</p><br />
                             <p className="text-blue-700 dark:text-sky-700 font-bold leading-6">Design responsive?</p><br />
-                            <p className="text-gray-600 font-medium dark:text-neutral-500 leading-6">Chacun de mes sites sont conçu pour être fonctionnel sur chaque écran. <span className="text-blue-700 dark:text-sky-700 font-medium">Saviez-vous</span> que 90% des utilisateurs des sites web naviguent à partir de téléphone</p>
+                            <p className="text-gray-600 font-medium dark:text-neutral-500 leading-6">Chacun de mes sites est conçu pour être fonctionnel sur tous les écrans. <span className="text-blue-700 dark:text-sky-700 font-medium">Saviez-vous</span> que 90% des utilisateurs de sites web naviguent depuis leur téléphone ?</p>
                         </div>
                         <img src="/ui-ux.png" className="w-[40rem] justify-self-center col-span-1 h-auto order-2" />
                 </section>
@@ -40,9 +40,9 @@ const Realisation = () => {
                     <h1 className="font-semibold text-neutral-700 dark:text-neutral-300">Portfolio</h1>
                     <h4 className="font-bold text-blue-700 dark:text-sky-700">Mes projets récents</h4>
                     <div className="space-x-4 py-4">
-                        {active == "Tous" ? <button className="border bg-blue-700 text-white border-blue-700 rounded-full px-2 py-1">Tous</button> : <button className="border border-neutral-400 rounded-full px-2 py-1" onClick={() => {setActive("Tous")}}>Tous</button>}
-                        {active == "Agence" ? <button className="border bg-blue-700 text-white border-blue-700 rounded-full px-2 py-1">Agence</button> : <button className="border border-neutral-400 rounded-full px-2 py-1" onClick={() => {setActive("Agence")}}>Agence</button>}
-                        {active == "Organisme" ? <button className="border bg-blue-700 text-white border-blue-700 rounded-full px-2 py-1">Organisme</button> : <button className="border border-neutral-400 rounded-full px-2 py-1" onClick={() => {setActive("Organisme")}}>Organisme</button>}
+                        <button className={`border border-neutral-400 rounded-full px-2 py-1 ${active == 'Tous' && `bg-blue-700 text-white border-blue-700`}`}onClick={() => {setActive("Tous")}}>Tous</button>
+                        <button className={`border border-neutral-400 rounded-full px-2 py-1 ${active == 'Agence' && `bg-blue-700 text-white border-blue-700`}`}onClick={() => {setActive("Agence")}}>Agence</button>
+                        <button className={`border border-neutral-400 rounded-full px-2 py-1 ${active == 'Organisme' && `bg-blue-700 text-white border-blue-700`}`}onClick={() => {setActive("Organisme")}}>Organisme</button>
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
                         {project.map(project => (
