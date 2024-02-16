@@ -22,7 +22,7 @@ const Contact = () => {
         const templateParams = {
             from_nom: formData.get('nom') as string,
             from_prenom: formData.get('prenom') as string,
-            sujet: formData.get('sujet') as string,
+            email: formData.get('email') as string,
             message: formData.get('message') as string,
         };
     
@@ -53,8 +53,8 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className="flex flex-col w-full space-y-4">
-                            <label className="dark:text-neutral-500">Sujet : </label>
-                            <input name='sujet' className="border border-neutral-300 p-2 rounded-xl dark:bg-neutral-800 dark:border-neutral-700" type="text" placeholder="votre sujet" />
+                            <label className="dark:text-neutral-500">Email : </label>
+                            <input name='email' className="border border-neutral-300 p-2 rounded-xl dark:bg-neutral-800 dark:border-neutral-700" type="text" placeholder="votre email" />
                         </div>
                         <div className="flex flex-col w-full space-y-4">
                             <label className="dark:text-neutral-500">Commentaire : </label>
