@@ -43,7 +43,7 @@ const Header = () => {
             <FaGithub className="w-8 h-8" />
           </a>
           <a
-            href="www.linkedin.com/in/jonathan-deschênes-4276802b5"
+            href="https://ca.linkedin.com/in/jonathan-desch%C3%AAnes-4276802b5?trk=people-guest_people_search-card"
             target="_blank"
           >
             <IoLogoLinkedin className="w-10 h-10" />
