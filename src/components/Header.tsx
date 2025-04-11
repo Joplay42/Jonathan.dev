@@ -25,7 +25,7 @@ const Header = () => {
     <header
       data-aos="fade-down"
       data-aos-duration="1000"
-      className="bg-white dark:bg-neutral-900 p-6 lg:p-14 mx-4 xl:mx-16 mt-4 lg:mt-10 rounded-3xl shadow-xl border border-gray-200 dark:border-neutral-800"
+      className="bg-white dark:bg-neutral-900 p-6 lg:p-10 mx-4 xl:mx-16 mt-4 lg:mt-10 rounded-3xl shadow-xl border border-gray-200 dark:border-neutral-800"
     >
       <div className="flex justify-between items-center">
         <div className="flex justify-between items-center gap-6">

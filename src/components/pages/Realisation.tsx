@@ -7,36 +7,20 @@ import { useEffect } from "react";
 const Realisation = () => {
   const project = [
     {
+      name: "Healthbuddy",
+      type: "Application web",
+      description:
+        "HealthBuddy est une application web qui est un calorie tracker pour les fans de fitness 100% gratuit!",
+      link: "https://health-buddy.net/",
+      img: "/HealthBuddy.png",
+    },
+    {
       name: "Marché Ahuntsic-CartieVille",
       type: "Organisme",
       description:
         "Marché Ahuntsic-Cartierville est un petit marché d'été qui aide les communautés en offrant des produits frais peu couteux.",
       link: "https://www.marcheac.com/",
       img: "/MarcheAC.png",
-    },
-    {
-      name: "Centre d'entraide thérèse-de-Blainville",
-      type: "Organisme",
-      description:
-        "Centre d'entraide Thérèse-de-Blainville aide les gens défavoriser en les hébergeants en augmentant leur qualité de vie.",
-      link: "https://www.entraidetdb.org/",
-      img: "/Cetb.png",
-    },
-    {
-      name: "Amicale des scouts",
-      type: "Organisme",
-      description:
-        "L'amicale des scouts et guides de Montréal sert à regrouper les anciens scouts afin de s'assurer à garder la culture allumé.",
-      link: "https://www.amicalescoutsguides-montreal.org/",
-      img: "/amicale.png",
-    },
-    {
-      name: "Réparatech",
-      type: "Agence",
-      description:
-        "Réparatech est une compagnie de support informatique, celle-ci donnes son aide et ses services pour aider les gens avec des problèmes informatiques.",
-      link: "https://reparatech.net/",
-      img: "/Reparatech.png",
     },
     {
       name: "Pause café j'm",
@@ -47,14 +31,6 @@ const Realisation = () => {
       img: "/JM.png",
     },
     {
-      name: "Zorilla web",
-      type: "Agence",
-      description:
-        "Zorilla web est une compagnie de développement d'application, d'ailleurs ils ont créer un constructeur de site web.",
-      link: "https://zorillaweb.com/",
-      img: "/ZorillaWeb.png",
-    },
-    {
       name: "trajectoire PME",
       type: "Agence",
       description:
@@ -63,28 +39,20 @@ const Realisation = () => {
       img: "/trajectoirePME.png",
     },
     {
-      name: "Zookod",
-      type: "Agence",
-      description:
-        "Zookod est une agence de site web, celle-ci réalise des sites web professionel pour les clients.",
-      link: "https://zookod.com/",
-      img: "/Zookod.png",
-    },
-    {
-      name: "SCRI",
-      type: "Organisme",
-      description:
-        "Le Scri est un organisme a but d'aider les nouveaux immigrant en aide, ils hébergent et aide ceux-ci.",
-      link: "https://www.scrimontreal.ca/",
-      img: "/SCRI.png",
-    },
-    {
       name: "Canada Animal Distribution",
       type: "Agence",
       description:
         "Canada Animal Distribution est une compagnie qui se spécialise dans la vente de produit animalier, ils offre un variété de produits et ils achètent aussi.",
       link: "https://www.canadaanimaldistribution.com/",
       img: "/CAD.png",
+    },
+    {
+      name: "Amicale des scouts",
+      type: "Organisme",
+      description:
+        "L'amicale des scouts et guides de Montréal sert à regrouper les anciens scouts afin de s'assurer à garder la culture allumé.",
+      link: "https://www.amicalescoutsguides-montreal.org/",
+      img: "/amicale.png",
     },
   ];
 
@@ -152,6 +120,17 @@ const Realisation = () => {
               }}
             >
               Tous
+            </button>
+            <button
+              className={`border border-neutral-400 rounded-full px-2 py-1 ${
+                active == "Application web" &&
+                `bg-blue-700 text-white border-blue-700`
+              }`}
+              onClick={() => {
+                setActive("Application web");
+              }}
+            >
+              Application web
             </button>
             <button
               className={`border border-neutral-400 rounded-full px-2 py-1 ${
