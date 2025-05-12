@@ -15,6 +15,14 @@ const Realisation = () => {
       img: "/HealthBuddy.png",
     },
     {
+      name: "Mintly",
+      type: "Application web",
+      description:
+        "Mintly est une application web qui simplifie l'atteinte d'objectif financier!",
+      link: "https://mintly.onrender.com/",
+      img: "/Mintly.png",
+    },
+    {
       name: "Marché Ahuntsic-CartieVille",
       type: "Organisme",
       description:
